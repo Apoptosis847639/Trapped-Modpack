@@ -1,0 +1,264 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "genisis"
+	group: "48364B187EA8FB13"
+	icon: "minecraft:oak_sapling"
+	id: "068796C88CFDE21C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1DF1F72894D7DAB4"]
+			description: ["I think you know what a tree is, chop it down and harvest it's wood."]
+			id: "286F6C369F657299"
+			rewards: [{
+				id: "6B2D07BF6C1ADE6F"
+				item: {
+					Count: 1
+					id: "gtceu:iron_axe"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							AttackDamage: 7.0f
+							AttackSpeed: -3.2f
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 255
+							ToolSpeed: 4.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Crying about the danger of the Xen Crystal won't save you. Chop down a tree!"
+			tasks: [{
+				id: "17C4A5455643E491"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "Timber!!!"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"This pack is in beta and is not fully playable to completion(Quantum Teleporter), Currently you can play up until Insane Voltage."
+				""
+				"If you find a bug report it to the github <insert github here when released> or discord <insert discord here goddammit>"
+				""
+				"I hope you enjoy this pack!"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:naquadah_alloy_knife"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						RelocateMinedBlocks: 1b
+						RelocateMobDrops: 1b
+					}
+					GT.Tool: {
+						AttackDamage: 12.0f
+						AttackSpeed: 3.3f
+						Damage: 0
+						MaxDamage: 3071
+					}
+					HideFlags: 2
+				}
+			}
+			id: "769837F387864F5E"
+			size: 1.0d
+			subtitle: "This pack is in &4BETA"
+			tasks: [{
+				id: "3477F7845C21E041"
+				title: "Bleeding Edge"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["769837F387864F5E"]
+			description: [
+				"May 9th 200?"
+				""
+				"Black Mesa Research Facility, New Mexico"
+				""
+				"You are apart of the anomalous research team in Sector C, You told them it was a bad idea, but they didn't listen, now you're stuck here, Let's just hope they learn't their lesson. "
+			]
+			id: "1DF1F72894D7DAB4"
+			subtitle: "\"Prepare for unforseen consequences\" - G-man"
+			tasks: [{
+				id: "6FC614603A8C016C"
+				title: "Lore"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["286F6C369F657299"]
+			description: ["You can mine most needed ores with an iron pickaxe."]
+			id: "6B537ADDD27BB48D"
+			rewards: [{
+				id: "21FABB0A761433B9"
+				item: {
+					Count: 1
+					id: "gtceu:prospector.hv"
+					tag: {
+						Charge: 1600000L
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "You've played minecraft before. You know how to get an iron pickaxe."
+			tasks: [{
+				id: "7FE47E8F4C4AF1EB"
+				item: {
+					Count: 1
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6B537ADDD27BB48D"]
+			id: "4EE298D445290C40"
+			tasks: [{
+				count: 64L
+				id: "3E225BBB1FF6E833"
+				item: { Count: 16, id: "gtceu:copper_ore" }
+				type: "item"
+			}]
+			title: "Copper"
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6B537ADDD27BB48D"]
+			id: "7653AF3E87FAE7A9"
+			tasks: [{
+				count: 64L
+				id: "46276F230F702158"
+				item: { Count: 16, id: "gtceu:tin_ore" }
+				type: "item"
+			}]
+			title: "Tin Ore"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B537ADDD27BB48D"]
+			id: "16E26C25D617406C"
+			tasks: [{
+				count: 64L
+				id: "3B3654BCDFB5AB46"
+				item: { Count: 64, id: "gtceu:iron_ore" }
+				type: "item"
+			}]
+			title: "Iron"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"16E26C25D617406C"
+				"4EE298D445290C40"
+				"7653AF3E87FAE7A9"
+			]
+			hide_lock_icon: true
+			icon: {
+				Count: 1
+				id: "gtceu:neutronium_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						RelocateMinedBlocks: 1b
+						RelocateMobDrops: 1b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 6
+						MaxDamage: 65534
+						ToolSpeed: 184.0f
+					}
+					HideFlags: 2
+					Unbreakable: 1b
+				}
+			}
+			id: "0C69804F55663727"
+			tasks: [
+				{
+					id: "02C7F1B008B4F742"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/hammers"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "3223A58E2C4A8A58"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_files"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "422742260E45951F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_screwdrivers"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "403971F32C293CF6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_wrenches"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "514977990ECA217D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:tools/crafting_mortars"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -2.5d
+		}
+	]
+	title: "Genesis"
+}

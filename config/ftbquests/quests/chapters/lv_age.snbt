@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lv_age"
+	group: "48364B187EA8FB13"
+	icon: "gtceu:lv_wiremill"
+	id: "11B7B873C29EE4FF"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "LV Age"
+}

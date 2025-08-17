@@ -1,0 +1,15 @@
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('essium')
+        .ingot()
+        .components('2x chromium', '1x iron', '1x titanium', '5x sulfur', '1x nitrogen', '2x oxygen')
+        .color(0x248f40).iconSet(GTMaterialIconSet.DULL)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_ORE_SMELTING)
+        .cableProperties(GTValues.V[GTValues.HV], 1, 0, true)
+        .blastTemp(2450, "mid", 480, 800)
+    event.create('lapis_alloy')
+        .ingot()
+        .components('2x lapis', '1x iron', '1x aluminium')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+        .cableProperties(GTValues.V[GTValues.LV], 1, 0, true)
+
+})

@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam_age"
+	group: "48364B187EA8FB13"
+	icon: "gtceu:lp_steam_solid_boiler"
+	id: "0BFE05207DA309F2"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Steam Age"
+}
