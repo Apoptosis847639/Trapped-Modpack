@@ -177,6 +177,7 @@
 				"4EE298D445290C40"
 				"7653AF3E87FAE7A9"
 			]
+			description: ["{trapped.0C69804F55663727.description}"]
 			hide_lock_icon: true
 			icon: {
 				Count: 1
@@ -198,6 +199,7 @@
 				}
 			}
 			id: "0C69804F55663727"
+			subtitle: "{trapped.0C69804F55663727.subtitle}"
 			tasks: [
 				{
 					id: "02C7F1B008B4F742"
@@ -256,7 +258,8 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
+			title: "{trapped.0C69804F55663727.title}"
+			x: 9.0d
 			y: -2.5d
 		}
 	]
