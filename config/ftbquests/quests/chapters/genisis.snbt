@@ -90,7 +90,7 @@
 				""
 				"Black Mesa Research Facility, New Mexico"
 				""
-				"You are apart of the anomalous research team in Sector C, You told them it was a bad idea, but they didn't listen, now you're stuck here, Let's just hope they learn't their lesson. "
+				"You are apart of the anomalous research team in Sector C, You told them it was a bad idea, but they didn't listen, now you're stuck here, Let's just hope they learnt their lesson. "
 			]
 			id: "1DF1F72894D7DAB4"
 			subtitle: "\"Prepare for unforseen consequences\" - G-man"
@@ -261,6 +261,30 @@
 			title: "{trapped.0C69804F55663727.title}"
 			x: 9.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["0C69804F55663727"]
+			description: [
+				"With some iron and leather, you can make the &6Hang Glider&r, which allows you to fly through the air."
+				""
+				"&8Right Click&r with the glider in your hand and then jump off a high cliff to fly."
+			]
+			id: "1EB88F8A953EECAF"
+			subtitle: "Soar through the skies!"
+			tasks: [{
+				id: "74B7E1D040034EEB"
+				item: {
+					Count: 1
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Creative flight 0.5"
+			x: 9.0d
+			y: -6.0d
 		}
 	]
 	title: "Genesis"
