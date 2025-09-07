@@ -135,10 +135,16 @@
 		{
 			dependencies: ["6B537ADDD27BB48D"]
 			id: "4EE298D445290C40"
+			rewards: [{
+				count: 4
+				id: "361FC357A1CC343D"
+				item: "pamhc2foodextended:roastchickenitem"
+				type: "item"
+			}]
 			tasks: [{
 				count: 64L
 				id: "3E225BBB1FF6E833"
-				item: { Count: 16, id: "gtceu:copper_ore" }
+				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
 			title: "Copper"
@@ -151,7 +157,7 @@
 			tasks: [{
 				count: 64L
 				id: "46276F230F702158"
-				item: { Count: 16, id: "gtceu:tin_ore" }
+				item: "gtceu:tin_ingot"
 				type: "item"
 			}]
 			title: "Tin Ore"
@@ -161,10 +167,16 @@
 		{
 			dependencies: ["6B537ADDD27BB48D"]
 			id: "16E26C25D617406C"
+			rewards: [{
+				count: 2
+				id: "679DE807D2608AEE"
+				item: "pamhc2foodextended:supremepizzaitem"
+				type: "item"
+			}]
 			tasks: [{
 				count: 64L
 				id: "3B3654BCDFB5AB46"
-				item: { Count: 64, id: "gtceu:iron_ore" }
+				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
 			title: "Iron"
@@ -259,7 +271,7 @@
 				}
 			]
 			title: "{trapped.0C69804F55663727.title}"
-			x: 9.0d
+			x: 10.5d
 			y: -2.5d
 		}
 		{
@@ -270,6 +282,12 @@
 				"&8Right Click&r with the glider in your hand and then jump off a high cliff to fly."
 			]
 			id: "1EB88F8A953EECAF"
+			rewards: [{
+				count: 12
+				id: "3BB015B266822C05"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			subtitle: "Soar through the skies!"
 			tasks: [{
 				id: "74B7E1D040034EEB"
@@ -283,7 +301,125 @@
 				type: "item"
 			}]
 			title: "Creative flight 0.5"
-			x: 9.0d
+			x: 10.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0C69804F55663727"]
+			description: [""]
+			id: "1FA2DB74EE0FCD57"
+			rewards: [{
+				count: 64
+				id: "4273F09F57A68C2F"
+				item: "minecraft:apple"
+				type: "item"
+			}]
+			subtitle: "NEEEIIIGGHHHH!!!"
+			tasks: [{
+				id: "50D0C5DA361C5995"
+				item: "minecraft:saddle"
+				type: "item"
+			}]
+			title: "Jump onto a horse(or pig)"
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0C69804F55663727"
+				"7284A80DB17CA4CE"
+			]
+			description: ["Needed to power your first steam machines."]
+			id: "65CF26D61F78AB1B"
+			tasks: [{
+				id: "3808790A96F5601A"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4EE298D445290C40"
+				"7653AF3E87FAE7A9"
+			]
+			description: ["Bronze can be made at a &13:1 ratio&r with &6Copper&r and &6Tin"]
+			id: "27AE85C08487570E"
+			rewards: [{
+				count: 18
+				id: "072C6C427BABD25E"
+				item: "gtceu:bismuth_bronze_dust"
+				type: "item"
+			}]
+			subtitle: "Welcome to the bronze age"
+			tasks: [{
+				id: "3947CA9CD9262F8D"
+				item: "gtceu:bronze_dust"
+				type: "item"
+			}]
+			title: "Baby's First Alloy"
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["27AE85C08487570E"]
+			description: ["Bulk crafting alloys and machine parts is the way to succeed at this pack. "]
+			id: "7284A80DB17CA4CE"
+			subtitle: "The only way to get through &bGregTech"
+			tasks: [{
+				count: 64L
+				id: "239C51C5A9824A5B"
+				item: { Count: 64, id: "gtceu:bronze_ingot" }
+				type: "item"
+			}]
+			title: "Bulk Crafting"
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["65CF26D61F78AB1B"]
+			description: ["You are now in the steam age, time to make your first machines to process resources!"]
+			icon: "gtceu:lp_steam_alloy_smelter"
+			id: "3B5E0A74538E9E5D"
+			rewards: [
+				{
+					count: 2
+					id: "2ECB9B6255D16DDA"
+					item: "gtceu:lp_steam_solid_boiler"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0771A22ABFA961D5"
+					item: "gtceu:bronze_huge_fluid_pipe"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "271C1B07E9A855B3"
+				type: "checkmark"
+			}]
+			title: "Ignition Time!!!"
+			x: 18.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1DF1F72894D7DAB4"]
+			description: ["EMI allows you to look up recipes, it can also allow you to make recipe trees, save the preferred recipe that you want to use by default by clicking the \"heart\", then when you do that for all the items the recipe needs, click the little graph/tree icon."]
+			id: "2EAE79EF84CE970A"
+			rewards: [{
+				id: "7418647212F3F8FE"
+				item: "pamhc2foodextended:pepperonipizzaitem"
+				type: "item"
+			}]
+			subtitle: "USE IT USE IT USSSEEE ITTTT!!!"
+			tasks: [{
+				id: "65A47B167D01E5D1"
+				title: "USE EMI!!!"
+				type: "checkmark"
+			}]
+			x: 3.0d
 			y: -6.0d
 		}
 	]
