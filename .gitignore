@@ -226,3 +226,8 @@ kubejs/assets/gtceu/textures/item/material_sets/infinity/infinity_plate.xcf
 
 # Downloadable dependencies
 **/node_modules
+
+# Pakku Stuff
+!pakku.jar
+!pakku-lock.json
+!pakku.json
